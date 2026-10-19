@@ -35,6 +35,7 @@ public class StepDefinations extends Utils {
 	public void add_place_payload(String name, String Language, String Address) throws IOException {
 
 		res = given().spec(requestSpecification()).body(data.addPlaceDataPayLoad(name,Language,Address));
+		System.out.println(name);
 	}
 
 	@When("user calls {string} with post {string} request")
