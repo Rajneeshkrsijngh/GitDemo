@@ -66,6 +66,7 @@ public class StepDefinations extends Utils {
 //		JsonPath js = new JsonPath(resp);
 		
 //		assertEquals(js.get(key).toString(), expectedValue);
+		System.out.println(keyValue);
 		
 		assertEquals(getJsonPath(response,keyValue),expectedValue);
 	}
